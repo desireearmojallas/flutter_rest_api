@@ -58,7 +58,7 @@ class _NoteListState extends State<NoteList> {
         body: Builder(
           builder: (_) {
             if (_isLoading) {
-              return CircularProgressIndicator();
+              return Center(child: CircularProgressIndicator());
             }
 
             if (_apiResponse!.error) {
